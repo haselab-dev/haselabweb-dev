@@ -86,8 +86,8 @@
         <!--========== PARALLAX ==========-->
         <div class="parallax-window" data-parallax="scroll" data-image-src="../../img/1920x1080/05.jpg">
             <div class="parallax-content container">
-                <h1 class="carousel-title">FIB Dataset</h1>
-                <p>In this page, we describe public dataset Fish Image Bank (FIB) which we developed.</p>
+                <h1 class="carousel-title">VSAED</h1>
+                <p>In this page, we describe public dataset VR-Self-annotation Emotion Dataset (VSAED) which we developed.</p>
             </div>
         </div>
         <!--========== PARALLAX ==========-->
@@ -103,13 +103,7 @@
             <div class="row">
                 <div class="col-sm-12 sm-margin-b-50">
                 <p class="normal">
-                Fish Image Bank (FIB)データセットは，JST ACT-X「<a href="https://www.jst.go.jp/kisoken/act-x/research_area/ongoing/bunya2020-1.html" target="new">AI活用で挑む学問の革新と創成</a>」採択プロジェクト「<a href="https://www.jst.go.jp/kisoken/act-x/project/111F003/111F003_2020.html" target="new">水産業のビッグデータ化に向けた汎用的な漁獲量認識基盤の開発</a>」の研究の一部として，長谷川研究室が収集，アノテーションを行っています．
-                </p> <br /> 
-                <p class="normal">
-                利用に際しては，以下の文章をよく確認してください．
-                </p>
-                <p class="normal">
-                内容に問題を見つけた方は，t-hase[at]u-fukui.ac.jpまでお知らせいただけると幸いです．
+                VR-Self-annotation Emotion Dataset (VSAED)は，JSPS科学研究費助成事業 基盤研究(C) 採択プロジェクト「<a href="https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-23K11164/" target="new">行動認識AIの民主化に向けた基盤モデルの実現</a>」の研究の一部として，長谷川研究室が収集，アノテーションを行っています．利用に際しては，以下の文章をよく確認してください．内容に問題を見つけた方は，t-hase[at]u-fukui.ac.jpまでお知らせいただけると幸いです．
                 </p>
                 </div>
             </div>
@@ -117,7 +111,6 @@
             
         </div>
         <!-- End About -->
-        
         
         <!-- Features -->
         <div class="bg-color-sky-light" data-auto-height="true">
@@ -132,13 +125,17 @@
 	                <div class="col-sm-12 sm-margin-b-50">
 	                    <p class="normal">
 	                    <ul>
-	                    <li>FIBは24魚種405枚の4K画像で構成される魚画像データセットです．</li>
-	                    <li>2022年3月12日から2023年9月15日までの間に，福井県内の市場や卸売業者にて流通した魚を対象に撮影を行っています．</li>
-	                    <li>背景は単色で統一され，なるべく環境が統一されるように照明を当てています．</li>
-	                    <li>1枚の画像には必ず魚が1尾含まれるようにしています．</li>
-	                    <li>一部不要な背景は手動で除去しています．</li>
-	                    <li>同一個体が複数回撮影されているものを含みます．</li>
-	                    <li>ラベルは画像を目視で確認し，手動で付与されているため，誤りを含む可能性があります．</li>
+	                    <li>VSAEDは6感情クラス1352発話で構成される内的感情認識データセットです．</li>
+	                    <li>被験者は健常な20代の28名（男性22名，女性6名）です．</li>
+	                    <li>感情クラスは，怒り（Angry），恐れ（Fear），不快（Disgust），中立（Neutral），悲しい（Sad），幸せ（Happy）の6クラスです．</li>
+	                    <li>2024年12月に福井県内で実験環境を整備して録音を行いました．</li>
+	                    </ul>
+	                    <h4>一般的な感情認識データセットと比べ，以下の特徴があります．</h4>
+	                    <ul>
+	                    <li>発話先が機械（音声対話エージェント）であることを伝えた，機械対話データセットです．</li>
+	                    <li>発話先が感情認識できる機械である場合，そうでない機械である場合を分けて計測しています．</li>
+	                    <li>感情表出を指示せず，VRを用いて自然に生じた感情を記録しています．</li>
+	                    <li>正解ラベルを本人の申告に基づいて付与しています．</li>
 	                    </ul>
 	                    </p>
 	                </div>
@@ -159,25 +156,72 @@
             <div class="row">
                 <div class="col-sm-12 sm-margin-b-50">
                 	<p class="normal">
-                	FIBデータセットは<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja">CC BY-SAライセンス</a>に基づいて公開されます．
+                	VSAEDは<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.ja">CC BY-NC-ND 4.0ライセンス</a>に基づいて公開されます．
                     </p>
                     <p class="normal">
-                     <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://haselab.fuis.u-fukui.ac.jp/research/fish/fib.html">FIB Dataset</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://haselab.fuis.u-fukui.ac.jp/">Tatsuhito Hasegawa</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+                     <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+					  <a property="dct:title" rel="cc:attributionURL" href="https://haselab.fuis.u-fukui.ac.jp/">VSAED</a> by
+					  <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://example.com/your-name">Mitsuki Okayama</a> is licensed under
+					  <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+					    CC BY-NC-ND 4.0
+					    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="CC">
+					    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="BY">
+					    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="NC">
+					    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt="ND">
+					  </a>
+					</p>
                     </p>
                 </div>
+            </div>
+        </div>
+        <!-- End Features -->
+        
+        
+        <!-- Features -->
+        <div class="bg-color-sky-light" data-auto-height="true">
+            <div id="collabo" class="content-lg container">
+	        	<div class="row margin-b-20">
+	                <div class="col-sm-6">
+	                    <h2>Basic information</h2>
+	                </div>
+	            </div>
                 
-                
+	            <div class="row">
+	                <div class="col-sm-12 sm-margin-b-50">
+	                    <p class="normal">
+	                    <ul>
+	                    <li>Developer: 岡山 充希</li>
+	                    <li>Dataset name: VR-Self-annotation Emotion Dataset (VSAED)</li>
+	                    <li>Category: Artificial intelligence, Signal processing</li>
+	                    <li>Keywords: Speech Emotion Recognition, Human-Computer Interaction</li>
+	                    <li>Data format: Wav audio file</li>
+	                    </ul>
+	                    </p>
+	                </div>
+	            </div>
+            </div>
+        </div>
+        <!-- End Features -->
+        
+        <!-- Features -->
+        <div id="collabo" class="content-lg container">
+        	<div class="row margin-b-20">
+                <div class="col-sm-6">
+                	<h2>Citation</h2>
+                </div>
+            </div>
+            
+            <div class="row">
                 <div class="col-sm-12 sm-margin-b-50">
-                <h2>Citation</h2>
                 	<p class="normal">
-                	FIBデータセット利用時には以下の文献を引用してください．
+                	VSAED利用時には以下の文献を引用してください．
                     </p>
                     
                 	<div style="border: #000000 solid 1px; font-size: 100%; padding: 0px;">
                 	Text
                 	</div>
                 	<div style="border: #ff69b4 solid 1px; font-size: 100%; padding: 15px;">
-                	Tatsuhito Hasegawa and Daichi Nakano, "Robust Fish Recognition using Foundation Models towards an Automatic Fish Resource Management", Journal of Marine Science and Engineering, vol. 12, no. 3: 488, 2024. https://doi.org/10.3390/jmse12030488
+                		Under reviewing...
                 	</div>
                 	<br />
                 	
@@ -185,72 +229,27 @@
                 	bibtex
                 	</div>
                 	<div style="border: #ff69b4 solid 1px; font-size: 100%; padding: 15px;">
-						@ARTICLE{Hasegawa2024, <br />
-						  title     = "Robust Fish Recognition using Foundation Models towards an Automatic Fish Resource Management", <br />
-						  author    = "Hasegawa, Tatsuhito and Nakano, Daichi", <br />
-						  JOURNAL   = "Journal of Marine Science and Engineering", <br />
-						  VOLUME    = 12, <br />
-						  YEAR      = 2024, <br />
-						  NUMBER    = 3, <br />
-						  ARTICLE-NUMBER = 488, <br />
-						  URL       = "https://www.mdpi.com/2077-1312/12/3/488", <br />
+						@ARTICLE{Okayama2025, <br />
+						  title     = "xxx", <br />
+						  author    = "Okayama, Mitsuki and Hasegawa, Tatsuhito", <br />
+						  JOURNAL   = "xxx", <br />
+						  VOLUME    = xx, <br />
+						  YEAR      = 2025, <br />
+						  NUMBER    = xx, <br />
+						  ARTICLE-NUMBER = xx, <br />
+						  URL       = "xxx", <br />
 						}
                 	</div>
                 </div>
             </div>
         </div>
         <!-- End Features -->
+        
                 
         <div class="bg-color-sky-light" data-auto-height="true">
         <!-- Latest Products -->
         <div class="content-lg container">
-            <div class="row margin-b-40">
-                <div class="col-sm-6">
-                    <h2>Sample images</h2>
-                </div>
-            </div>
-            <!--// end row -->
-
-            <div class="row">
-                <!-- Latest Products -->
-                <div class="col-sm-3 sm-margin-b-50">
-                    <div class="margin-b-20">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            <img class="img-responsive" src="IMG_20220312_0093.jpg" alt="fish">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 sm-margin-b-50">
-                    <div class="margin-b-20">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            <img class="img-responsive" src="IMG_20221004_0015.jpg" alt="fish">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 sm-margin-b-50">
-                    <div class="margin-b-20">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            <img class="img-responsive" src="IMG_20221130_0008.jpg" alt="fish">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 sm-margin-b-50">
-                    <div class="margin-b-20">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            <img class="img-responsive" src="IMG_20230511_0006.jpg" alt="fish">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--// end row -->
-        </div>
-        <!-- End Latest Products -->
-        </div>
-        
-        
-        <!-- Features -->
-        <div id="collabo" class="content-lg container">
-        	<div class="row margin-b-20">
+            <div class="row margin-b-20">
                 <div class="col-sm-6">
                     <h2>Download</h2>
                 </div>
@@ -259,37 +258,15 @@
             <div class="row">
                 <div class="col-sm-12 sm-margin-b-50">
                 	<p class="normal">
-                	<a href="https://drive.google.com/file/d/1Hocs8FUu43lnGsiLphEwKyK_A6q0scQs/view?usp=sharing" target="new">FIB_v1.0.zip (511MB)</a>
+                	<a href="xxxxxx" target="new">VSAED_v1.0.zip (xxx MB)   (Comming soon...)</a>
                     </p>
                 </div>
             </div>
+            <!--// end row -->
         </div>
-        <!-- End Features -->
+        <!-- End Latest Products -->
+        </div>
         
-        <!-- Features -->
-        <div class="bg-color-sky-light" data-auto-height="true">
-	        <div id="collabo" class="content-lg container">
-	        	<div class="row margin-b-20">
-	                <div class="col-sm-6">
-	                    <h2>Labels</h2>
-	                </div>
-	            </div>
-	            
-	            <div class="row">
-	                <div class="col-sm-12 sm-margin-b-50">
-	                	<p class="normal">
-	                	各画像には以下のラベルが付与されています．COCO形式です．
-	                    <ul>
-							<li>魚種</li>
-							<li>インスタンスマスク</li>
-							<li>キーポイント9点</li>
-						</ul>
-	                    </p>
-	                </div>
-	            </div>
-	        </div>
-        </div>
-        <!-- End Features -->
 
         <!--========== FOOTER ==========-->
         <footer class="footer">
