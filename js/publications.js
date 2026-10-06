@@ -21,295 +21,485 @@
     '共同研究'
   ];
 
+  const SECTION_MAP = {
+    '学術論文（査読有）': {
+      list: 'pub-journal',
+      section: 'section-journal'
+    },
+
+    '解説・総説（査読無）': {
+      list: 'pub-review',
+      section: 'section-review'
+    },
+
+    '国際会議発表論文（査読有）': {
+      list: 'pub-international',
+      section: 'section-international'
+    },
+
+    '国内学会発表：学生（査読無）': {
+      list: 'pub-domestic-student',
+      section: 'section-domestic-student'
+    },
+
+    '国内学会発表（査読無）': {
+      list: 'pub-domestic',
+      section: 'section-domestic'
+    },
+
+    '招待講演': {
+      list: 'pub-invited',
+      section: 'section-invited'
+    },
+
+    'その他講演': {
+      list: 'pub-other-talk',
+      section: 'section-other-talk'
+    },
+
+    '受賞等': {
+      list: 'pub-award',
+      section: 'section-award'
+    },
+
+    '学生の受賞': {
+      list: 'pub-student-award',
+      section: 'section-student-award'
+    },
+
+    '外部資金獲得[代表]': {
+      list: 'pub-external-main',
+      section: 'section-external-main'
+    },
+
+    '外部資金獲得[分担]': {
+      list: 'pub-external-sub',
+      section: 'section-external-sub'
+    },
+
+    '学内予算獲得[代表]': {
+      list: 'pub-internal-main',
+      section: 'section-internal-main'
+    },
+
+    '学内予算獲得[分担]': {
+      list: 'pub-internal-sub',
+      section: 'section-internal-sub'
+    },
+
+    '外部資金獲得（学生）': {
+      list: 'pub-student-fund',
+      section: 'section-student-fund'
+    },
+
+    '共同研究': {
+      list: 'pub-collaboration',
+      section: 'section-collaboration'
+    }
+  };
+
+
   function orderValue(value, fallback) {
     const n = Number(value);
-    return Number.isFinite(n) ? n : fallback;
+
+    return Number.isFinite(n)
+      ? n
+      : fallback;
   }
 
-  /*
-   * 元の publication.html と同じ階層を生成する。
-   *
-   * <div class="col-sm-12 sm-margin-b-50">
-   *   <div class="wow publication-wow fadeInLeft"
-   *        data-wow-duration=".3"
-   *        data-wow-delay=".3s">
-   *     <h3>...</h3>
-   *     <ol>...</ol>
-   *   </div>
-   * </div>
-   */
-  function createSection(title, rows) {
-    const column = document.createElement('div');
-    column.className = 'col-sm-12 sm-margin-b-50';
 
-    const inner = document.createElement('div');
-    inner.className = 'wow publication-wow fadeInLeft';
-    inner.setAttribute('data-wow-duration', '.3');
-    inner.setAttribute('data-wow-delay', '.3s');
+  function createPublicationItem(item) {
 
-    const h3 = document.createElement('h3');
-    h3.textContent = title;
-    inner.appendChild(h3);
+    const li = document.createElement('li');
 
-    const ol = document.createElement('ol');
+    li.className = 'pubs';
 
-    rows.forEach(item => {
-      const li = document.createElement('li');
-      li.className = 'pubs';
+    li.appendChild(
+      document.createTextNode(item.text)
+    );
+
+
+    const href = TSV.safeHref(item.url);
+
+    if (href) {
 
       li.appendChild(
-        document.createTextNode(item.text)
+        document.createTextNode(' ')
       );
 
-      const href = TSV.safeHref(item.url);
+      const a =
+        document.createElement('a');
 
-      if (href) {
-        li.appendChild(
-          document.createTextNode(' ')
-        );
+      a.href = href;
+      a.target = 'new';
+      a.rel = 'noopener noreferrer';
 
-        const a = document.createElement('a');
-        a.href = href;
-        a.target = 'new';
-        a.rel = 'noopener noreferrer';
-        a.textContent = '[link]';
+      a.textContent = '[link]';
 
-        li.appendChild(a);
-      }
+      li.appendChild(a);
+    }
 
-      ol.appendChild(li);
-    });
-
-    inner.appendChild(ol);
-    column.appendChild(inner);
-
-    return column;
+    return li;
   }
 
+
   function updateLastModified(headerValue) {
+
     const target =
       document.getElementById(
         'publication-last-update'
       );
 
-    if (!target) {
+    if (!target || !headerValue) {
       return;
     }
 
-    if (!headerValue) {
-      target.textContent = '';
+
+    const date =
+      new Date(headerValue);
+
+    if (
+      Number.isNaN(
+        date.getTime()
+      )
+    ) {
       return;
     }
 
-    const date = new Date(headerValue);
 
-    if (Number.isNaN(date.getTime())) {
-      target.textContent = '';
-      return;
-    }
+    const y =
+      date.getFullYear();
 
-    const year = date.getFullYear();
-    const month = date.getMonth() + 1;
-    const day = date.getDate();
+    const m =
+      date.getMonth() + 1;
+
+    const d =
+      date.getDate();
+
 
     target.textContent =
-      `Last Update: ${year}年${month}月${day}日`;
+      `Last Update: ${y}年${m}月${d}日`;
   }
+
 
   /*
-   * TSV版ではfetch後にPublication要素を
-   * DOMへ追加するため、描画完了後に
-   * Publication専用のWOWを初期化する。
+   * Publicationを挿入した後は、
+   * ページ全体の高さが大きく変わる。
    *
-   * boxClassを publication-wow に限定して、
-   * ページ内の既存 .wow 要素は再初期化しない。
+   * parallax.js は初期化時のレイアウトを
+   * 基準にするため、resize/scrollを発火して
+   * レイアウトを再計算させる。
    */
-  function initPublicationWow() {
-    const elements =
-      document.querySelectorAll(
-        '.publication-wow'
-      );
+  function refreshParallax() {
 
-    if (typeof window.WOW === 'function') {
-      try {
-        const publicationWow =
-          new window.WOW({
-            boxClass: 'publication-wow',
-            animateClass: 'animated',
-            offset: 0,
-            mobile: true,
-            live: false
-          });
-
-        publicationWow.init();
-        return;
-
-      } catch (error) {
-        console.warn(
-          'Publication WOW initialization failed.',
-          error
-        );
-      }
+    if (!window.jQuery) {
+      return;
     }
 
+    window.requestAnimationFrame(
+      function () {
+
+        jQuery(window)
+          .trigger('resize')
+          .trigger('scroll');
+
+      }
+    );
+
+
     /*
-     * WOWが何らかの理由で使えない場合でも
-     * Publicationそのものは非表示にしない。
+     * ブラウザや画像読み込みタイミングによって
+     * 1回では再計算されないことがあるので
+     * 念のため少し後でもう一度。
      */
-    elements.forEach(element => {
-      element.style.visibility = 'visible';
-    });
+    window.setTimeout(
+      function () {
+
+        jQuery(window)
+          .trigger('resize')
+          .trigger('scroll');
+
+      },
+      100
+    );
   }
 
-  async function renderPublications() {
-    const root =
-      document.getElementById(
-        'publications-root'
-      );
 
-    if (!root) {
-      console.error(
-        '#publications-root was not found.'
-      );
+  function initializeWow() {
+
+    if (
+      typeof window.WOW !==
+      'function'
+    ) {
       return;
     }
 
     try {
-      const {
-        rows,
-        lastModified
-      } = await TSV.loadWithMeta(
-        PUBLICATIONS_TSV
-      );
 
-      const data = rows.filter(
-        row => row.section && row.text
-      );
-
-      const groups = new Map();
-
-      data.forEach((row, index) => {
-        if (!groups.has(row.section)) {
-          groups.set(
-            row.section,
-            []
-          );
-        }
-
-        groups
-          .get(row.section)
-          .push({
-            ...row,
-            _index: index
-          });
-      });
-
-      /*
-       * 各セクション内部の表示順。
-       * TSVのorder列を優先する。
-       */
-      groups.forEach(items => {
-        items.sort(
-          (a, b) =>
-            orderValue(
-              a.order,
-              a._index
-            ) -
-              orderValue(
-                b.order,
-                b._index
-              ) ||
-            a._index - b._index
-        );
-      });
-
-      /*
-       * SECTION_ORDERに記載した順序を優先。
-       * TSV側に新しい未知セクションがあれば
-       * 最後に追加する。
-       */
-      const knownSections =
-        SECTION_ORDER.filter(
-          section =>
-            groups.has(section)
-        );
-
-      const unknownSections =
-        [...groups.keys()].filter(
-          section =>
-            !SECTION_ORDER.includes(
-              section
-            )
-        );
-
-      const sections = [
-        ...knownSections,
-        ...unknownSections
-      ];
-
-      root.replaceChildren();
-
-      if (sections.length === 0) {
-        const column =
-          document.createElement('div');
-
-        column.className =
-          'col-sm-12 sm-margin-b-50';
-
-        column.textContent =
-          'Publicationはまだ登録されていません。';
-
-        root.appendChild(column);
-
-      } else {
-        sections.forEach(section => {
-          root.appendChild(
-            createSection(
-              section,
-              groups.get(section)
-            )
-          );
+      const wow =
+        new window.WOW({
+          boxClass: 'wow',
+          animateClass: 'animated',
+          offset: 0,
+          mobile: true,
+          live: false
         });
-      }
 
-      updateLastModified(
-        lastModified
-      );
-
-      /*
-       * 重要：
-       * TSVからDOMを生成した後でWOWを初期化する。
-       */
-      initPublicationWow();
+      wow.init();
 
     } catch (error) {
-      console.error(error);
 
-      root.replaceChildren();
+      console.warn(
+        'WOW initialization failed.',
+        error
+      );
 
-      const column =
-        document.createElement('div');
-
-      column.className =
-        'col-sm-12 sm-margin-b-50';
-
-      column.textContent =
-        'Publicationを読み込めませんでした。';
-
-      root.appendChild(column);
+      /*
+       * WOWに失敗しても
+       * Publication自体は表示する。
+       */
+      document
+        .querySelectorAll('.wow')
+        .forEach(function (element) {
+          element.style.visibility =
+            'visible';
+        });
     }
   }
+
+
+  async function renderPublications() {
+
+    try {
+
+      const result =
+        await TSV.loadWithMeta(
+          PUBLICATIONS_TSV
+        );
+
+      const rows =
+        result.rows;
+
+      const groups =
+        new Map();
+
+
+      /*
+       * セクションごとに分類
+       */
+      rows.forEach(
+        function (row, index) {
+
+          if (
+            !row.section ||
+            !row.text
+          ) {
+            return;
+          }
+
+
+          if (
+            !groups.has(
+              row.section
+            )
+          ) {
+            groups.set(
+              row.section,
+              []
+            );
+          }
+
+
+          groups
+            .get(row.section)
+            .push({
+              ...row,
+              _index: index
+            });
+        }
+      );
+
+
+      /*
+       * セクション内部を
+       * TSVのorderで並べる
+       */
+      groups.forEach(
+        function (items) {
+
+          items.sort(
+            function (a, b) {
+
+              return (
+                orderValue(
+                  a.order,
+                  a._index
+                )
+                -
+                orderValue(
+                  b.order,
+                  b._index
+                )
+                ||
+                a._index -
+                b._index
+              );
+            }
+          );
+        }
+      );
+
+
+      /*
+       * 元HTMLに最初から存在する
+       * 各 <ol> に li だけ追加する。
+       */
+      SECTION_ORDER.forEach(
+        function (sectionName) {
+
+          const config =
+            SECTION_MAP[
+              sectionName
+            ];
+
+          if (!config) {
+            return;
+          }
+
+
+          const ol =
+            document.getElementById(
+              config.list
+            );
+
+          const section =
+            document.getElementById(
+              config.section
+            );
+
+
+          if (
+            !ol ||
+            !section
+          ) {
+            console.warn(
+              'Publication section not found:',
+              sectionName
+            );
+            return;
+          }
+
+
+          ol.replaceChildren();
+
+
+          const items =
+            groups.get(
+              sectionName
+            ) || [];
+
+
+          /*
+           * TSVにデータが無いセクションは
+           * セクションごと隠す。
+           */
+          if (
+            items.length === 0
+          ) {
+
+            section.style.display =
+              'none';
+
+            return;
+          }
+
+
+          section.style.display =
+            'block';
+
+
+          items.forEach(
+            function (item) {
+
+              ol.appendChild(
+                createPublicationItem(
+                  item
+                )
+              );
+
+            }
+          );
+        }
+      );
+
+
+      /*
+       * TSVにあるがSECTION_ORDERにない
+       * セクションがあればConsoleに警告。
+       */
+      groups.forEach(
+        function (_, sectionName) {
+
+          if (
+            !SECTION_ORDER.includes(
+              sectionName
+            )
+          ) {
+
+            console.warn(
+              'Unknown publication section:',
+              sectionName
+            );
+
+          }
+        }
+      );
+
+
+      updateLastModified(
+        result.lastModified
+      );
+
+
+      /*
+       * 全Publication挿入後に
+       * WOWを初期化。
+       */
+      initializeWow();
+
+
+      /*
+       * ページ高さ変更後に
+       * parallaxを再計算。
+       */
+      refreshParallax();
+
+
+    } catch (error) {
+
+      console.error(
+        'Failed to load publications:',
+        error
+      );
+
+    }
+  }
+
 
   if (
     document.readyState ===
     'loading'
   ) {
+
     document.addEventListener(
       'DOMContentLoaded',
       renderPublications
     );
+
   } else {
+
     renderPublications();
+
   }
 
 })();
