@@ -13,7 +13,8 @@
     'その他講演',
     '受賞等',
     '学生の受賞',
-    '外部資金獲得',
+    '外部資金獲得[代表]',
+    '外部資金獲得[分担]',
     '学内予算獲得[代表]',
     '学内予算獲得[分担]',
     '外部資金獲得（学生）',
@@ -30,9 +31,6 @@
     column.className = 'col-sm-12 sm-margin-b-50';
 
     const inner = document.createElement('div');
-    inner.className = 'wow fadeInLeft';
-    inner.setAttribute('data-wow-duration', '.3');
-    inner.setAttribute('data-wow-delay', '.1s');
 
     const h3 = document.createElement('h3');
     h3.textContent = title;

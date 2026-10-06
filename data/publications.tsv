@@ -45,8 +45,11 @@
 学術論文（査読有）	44	Ajay Agarwal, Tatsuhito Hasegawa, "Are Emergent Misaligned Models Self-Aware of their Misalignment? Latent Introspection in Activation Spaces of niche Misaligned LLM", Journal of Advances in Information Technology, Vol. 17, No. 5, pp. 835-845, 2026. (IF2024: 1.5)	https://www.jait.us/show-270-1872-1.html
 学術論文（査読有）	45	Takuya Kato, Tatsuhito Hasegawa, "Projection Mahjong: Augmenting Real-World Mahjong Experience", Multimedia Tools and Applications, vol. 85, article no. 141, 31 pages, 2026. (IF2024: 3.6)	https://link.springer.com/article/10.1007/s11042-026-21151-7
 学術論文（査読有）	46	Shunsuke Sakai, Tatsuhito Hasegawa, Makoto Koshino, "LADMIM: Logical Anomaly Detection with Masked Image Modeling in Discrete Latent Space", Transactions on Machine Learning Research, 17 pages, 2026.3.	https://openreview.net/forum?id=uuuaRCMYE3
-学術論文（査読有）	47	Tatsuya Sasaki, Shunsuke Sakai, Tatsuhito Hasegawa, "unCLIP-KD: A Generative Knowledge Distillation Framework Conditioned on CLIP Representations", NeuroComputing, Vol. xx, No. xx, pp. xx-xx, 2026. (IF2024: 6.5)	
-学術論文（査読有）	48	Soumyajit Podder, Hiroaki Sakamoto, Tatsuhito Hasegawa, Chisato Sakamoto, Han-Sheng Chuang, "Deep Learning-Based Micro-Volume Viscosity Prediction Using Blinking Dynamics of Janus Particles", IEEE Sensors Journal, Vol. xx, no. xx, pp. xx-xx, 2026. (IF2024: 4.5)	
+学術論文（査読有）	47	Soumyajit Podder, Hiroaki Sakamoto, Tatsuhito Hasegawa, Chisato Sakamoto, Han-Sheng Chuang, "Deep Learning-Based Micro-Volume Viscosity Prediction Using Blinking Dynamics of Janus Particles", IEEE Sensors Journal, Vol. 26, no. 13, pp. 19791-19803, 2026. (IF2024: 4.5)	https://ieeexplore.ieee.org/document/11547833
+学術論文（査読有）	48	Tatsuya Sasaki, Shunsuke Sakai, Tatsuhito Hasegawa, "unCLIP-KD: A Generative Knowledge Distillation Framework Conditioned on CLIP Representations", NeuroComputing, Vol. 701, No. 1, pp. 1-15, 2026. (IF2024: 6.5)	https://www.sciencedirect.com/science/article/pii/S0925231226018990
+学術論文（査読有）	49	Yoshiya Matsuo, Takuya Kato, Kiyoshi Naruse, Takashi Yoshimura, Tatsuhito Hasegawa, Tomoya Nakayama, "DeepLabCut-based automated system reveals diverse temperature tolerance among medaka inbred strains and related Oryzias species", Scientific Reports, Vol. 16, Article number 25893, 2026. (IF2025: 4.9)	https://www.nature.com/articles/s41598-026-66712-w
+学術論文（査読有）	50	Asuka Okada, Tomoya Kawakami, Tatsuhito Hasegawa, "An Accuracy Improvement Scheme by Sharing Attack Data in Federated Learning-Based NIDS", Journal of Information Processing Transactions on Consumer Devices and Systems, Vol. xx, no. xx, pp. xx-xx, 2026.
+学術論文（査読有）	51	Tatsuhito Hasegawa, Tsubasa Kasakawa, Takeshi Shimazaki, "A Practical Multi-Response Surrogate-Assisted Decision-Support Protocol for FEM-Based Cold Forging Process Design", The International Journal of Advanced Manufacturing Technology, Vol. xx, No. xx, pp. xx-xx, 2026. (IF2025=3.7)
 解説・総説（査読無）	1	長谷川 達人, 越野 亮, "スマホ依存の予防・回復支援アプリに関する研究動向", 医学書院 公衆衛生, Vol. 84, No. 9, pp. 608-612 , 2020.9.	
 解説・総説（査読無）	2	坂井 俊介, 長谷川 達人, 越野 亮, "正規化フローに自己注意機構を用いた産業用画像における異常検知", 画像ラボ, pp. 7-13, 2024.8.	
 解説・総説（査読無）	3	S. Tsuji, T. Tanaka, T. Hasegawa, M. Nishimoto, and D. Ochi, "Development of Risk Screening Tool to Support ICCAT EAFM Based on Machine Learning", Collective volume of scientific papers. ICCAT, Vol.81 (4), pp. 1-18, 2024.	
@@ -91,6 +94,11 @@
 国際会議発表論文（査読有）	38	Hiromu Takamaa, Tatsuhito Hasegawa, "Dynamic Negative Correlation Learning in Deep Ensemble Learning", Proceedings of the 14th IIAE International Conference on Industrial Application Engineering (ICIAE 2026), 8 pages, Okayama, Japan, 2026. 3.	
 国際会議発表論文（査読有）	39	Yuya Mukose, Tatsuya Sasakia, Tatsuhito Hasegawa, "Automatic Recording System for Tag-less Lost-Item Retrieval Support Using a Vision-Language Model", Proceedings of the 14th IIAE International Conference on Industrial Application Engineering (ICIAE 2026), 8 pages, Okayama, Japan, 2026. 3.	
 国際会議発表論文（査読有）	40	Shunsuke Sakai, Xiangteng He, Chunzhi Gu, Leonid Sigal, Tatsuhito Hasegawa, "InvAD: Inversion-based Reconstruction-Free Anomaly Detection with Diffusion Models", Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2026 (CVPR 2026), 10 pages, Colorado, USA, 2026. 6.	
+国際会議発表論文（査読有）	41	Xiangteng He, Shunsuke Sakai, Shivam Chandhok, Sara Beery, Kun yuan, Nicolas Padoy, Tatsuhito Hasegawa, Leonid Sigal, "DSeq-JEPA: Discriminative Sequential Joint-Embedding Predictive Architecture", Proceedings of the European Conference on Computer Vision 2026 (ECCV 2026), 21 pages, Malmo, Sweden, 2026. 9.
+国際会議発表論文（査読有）	42	Hiromu Takama, Chunzhi Gu, Tatsuhito Hasegawa, "Compatibility-Aware Mutual Distillation", Proceedings of the 2026 IEEE 15th Global Conference on Consumer Electronics (GCCE), xx pages, Kobe, Japan, 2026.
+国際会議発表論文（査読有）	43	Yoshiki Sugimoto, Chunzhi Gu, Tatsuhito Hasegawa, "A Study on Dynamic Control of the Temperature Parameter in the Softmax Function for Image Classification", Proceedings of the 2026 IEEE 15th Global Conference on Consumer Electronics (GCCE), xx pages, Kobe, Japan, 2026.
+国際会議発表論文（査読有）	44	Yumeng Yang, Katsuya Hotta, Chao Zhang, Tatsuhito Hasegawa, Chunzhi Gu, "Music-Theory-Based Data Augmentation for Piano Hand Motion Generation", Proceedings of the 2026 IEEE 15th Global Conference on Consumer Electronics (GCCE), xx pages, Kobe, Japan, 2026.
+国際会議発表論文（査読有）	45	Tomohiro Aizawa, Katsuya Hotta, Chao Zhang, Tatsuhito Hasegawa, Chunzhi Gu, "3D Stylization from a Single-View Image via Flow-Based Latent Editing", Proceedings of the 2026 IEEE 15th Global Conference on Consumer Electronics (GCCE), xx pages, Kobe, Japan, 2026.
 国内学会発表：学生（査読無）	1	中島 清貴, 長谷川 達人, 木村 春彦, "お辞儀の正確さ評価システムのための単眼カメラ動画からのパラメータ推定", 情報処理学会 第47回ユビキタスコンピューティングシステム研究発表会, 大阪, 2015.7.	
 国内学会発表：学生（査読無）	2	中島 清貴, 長谷川 達人, 木村 春彦, "単眼カメラを用いたお辞儀の正確さ評価システム", 情報処理学会 コンピュータと教育研究会133回研究発表会, 東京, 2016.2.	
 国内学会発表：学生（査読無）	3	熊澤 秀一, 長谷川 達人, 南保 英孝, "タッチインターフェースを用いた指の種類識別", マルチメディア，分散，協調とモバイル (DICOMO2016)シンポジウム, 三重, 2016.7.	
@@ -211,6 +219,13 @@
 国内学会発表：学生（査読無）	118	大橋海斗, 坂井俊介, 長谷川達人, "ch-free行動認識モデルにおける勾配干渉の考察", マルチメディア，分散，協調とモバイル(DICOMO2026)シンポジウム, 宗像, 2026.6.	
 国内学会発表：学生（査読無）	119	村川大規, 坂井俊介, 長谷川達人, "視覚基盤モデルに基づく拡散世界モデルの効率的な訓練手法の構築", マルチメディア，分散，協調とモバイル(DICOMO2026)シンポジウム, 宗像, 2026.6.	
 国内学会発表：学生（査読無）	120	奥木悠翔, 長井智哉, 長谷川達人, 山本泰生, 峰野博史, "ARグラスを用いた魚種分類システムの性能評価", マルチメディア，分散，協調とモバイル(DICOMO2026)シンポジウム, 宗像, 2026.6.	
+国内学会発表：学生（査読無）	121	會澤智大, 栗山繁, 堀田克哉, 張潮, 長谷川達人, 顧淳祉, "代表点の逐次予測を用いたゼロショット 3D 領域抽出", Visual Computing 2026, 札幌, 2026.
+国内学会発表：学生（査読無）	122	會澤智大, 堀田克哉, 張潮, 長谷川達人, 顧淳祉, "単一視点画像を用いた3Dスタイル転写", 2026年電気学会産業応用部門大会, 岡山, 2026.
+国内学会発表：学生（査読無）	123	佐々木達也, 顧淳祉, 長谷川達人, "拡散モデルの速度場知識転移による慣性センサ行動認識の精度向上", 第25回情報科学技術フォーラム FIT 2026, 北九州, 2026.9.
+国内学会発表：学生（査読無）	124	杉本欣紀, 顧淳祉, 長谷川達人, "Softmax温度パラメータの訓練ダイナミクスに関する有効マージン分布からの考察", 第25回情報科学技術フォーラム FIT 2026, 北九州, 2026.9.
+国内学会発表：学生（査読無）	125	髙間大武, 顧淳祉, 長谷川達人, "学習進度に基づく適応的損失重み付けによる相互蒸留の改良", 第25回情報科学技術フォーラム FIT 2026, 北九州, 2026.9.
+国内学会発表：学生（査読無）	126	向瀬友哉, 顧淳祉, 李文敏, 長谷川達人, "異種モデルを用いたデータセット蒸留におけるマルチタスク勾配統合の検討", 映像情報メディア学会 メディア工学研究会, 北九州, 2026.9.
+国内学会発表：学生（査読無）	127	Soumyajit Podder, Tatsuhito Hasegawa, Han-Sheng Chuang, "Micro-Volume Viscosity Measurement by Janus Particle-Based Rotational Diffusometry Combining Deep Learning", The 12th Asia-Pacific Conference on Transducers and Micro-Nano Technology (APCOT), Taichung, Taiwan, 2026.6.
 国内学会発表（査読無）	1	長谷川 達人, 越野 亮, "インストラクショナルデザインに基づく教育教材設計", 日本経営工学会北陸支部学生研究発表会, 石川, 2009.3.	
 国内学会発表（査読無）	2	長谷川 達人, 木村 春彦, 越野 亮, "理科の実験疑似体験システムの開発", 日本経営工学会北陸支部学生研究発表会, 石川, 2011.3.	
 国内学会発表（査読無）	3	長谷川 達人, 越野 亮, "Androidスマートフォンを用いた放射線量記録システムの開発", 日本知能情報ファジィ学会・第20回北信越支部シンポジウム＆第11回人間共生システム研究会, 石川, 2011.12.	
@@ -295,6 +310,7 @@
 受賞等	29	長谷川 逹人, ベストカンバーサント賞, マルチメディア，分散，協調とモバイル(DICOMO2025)シンポジウム, 2025.6.	
 受賞等	30	長谷川 逹人, 最優秀論文賞, マルチメディア，分散，協調とモバイル(DICOMO2025)シンポジウム, 2025.6.	
 受賞等	31	長谷川 達人, 優秀論文賞, 第118回, 情報処理学会モバイルコンピューティングと新社会システム(MBL)研究会, 2026.3.	
+受賞等	32	長谷川 逹人, 2026年度山下記念研究賞（DICOMO2025), 情報処理学会, 2026.8.	
 学生の受賞	1	濱崎 大輔, 優秀論文発表賞, 電気学会, 2019.3.	
 学生の受賞	2	宮本 崇, 優秀学生賞, 計測自動制御学会北陸支部, 2019.3.	
 学生の受賞	3	水野 真, ヤングリサーチャー賞, マルチメディア，分散，協調とモバイル(DICOMO2019)シンポジウム, 2019.7.	
@@ -330,28 +346,32 @@
 学生の受賞	33	Ajay Agarwal, Best Oral Presentation Award, The 10th International Conference on Machine Learning and Soft Computing (ICMLSC 2026), 2026.2.	
 学生の受賞	34	坂井 俊介, 学生奨励賞, 情報処理学会第88回全国大会, 松山, 2026.3.	
 学生の受賞	35	奥木 悠翔, 学生奨励賞, 情報処理学会第88回全国大会, 松山, 2026.3.	
-外部資金獲得	1	長谷川 達人[分担], IPA 2009年度下期未踏IT人材発掘・育成事業, "GUIベースによる携帯アプリ統合開発環境の構築", 5,000千円, 2009.12 - 2010.8.	
-外部資金獲得	2	長谷川 達人[代表], 立石科学技術振興財団 国際交流助成, 2015.9.	
-外部資金獲得	3	長谷川 達人[代表], 科学技術融合振興財団 補助金助成, 210千円, "ゲーミフィケーションを利用したスマートフォン依存抑制アプリケーションの開発", 2016.1.	
-外部資金獲得	4	長谷川 達人[代表], 科研費 若手研究B, 3,900千円, "生体情報に基づく学習者状態に応じた自主学習支援システムの開発", 2016.4 - 2019.3.	
-外部資金獲得	5	長谷川 達人[分担], 科研費 基盤研究C, 4,940千円, "医療施設内結核感染予防のための結核健診受検職員の継続支援システムの構築", 2016.4 - 2020.3.	
-外部資金獲得	6	長谷川 達人[分担], 科研費 基盤研究C, 4,420千円, "工学的アプローチに基づいた，宇宙自然プラズマ波動の自動識別・知識発見に関する研究", 2017.4 - 2020.3.	
-外部資金獲得	7	長谷川 達人[代表], スズキ財団 科学技術研究助成, 1,200千円, "教師ラベル取得に制約のある状況における行動センシングの個人適応", 2019.4-2020.3.	
-外部資金獲得	8	長谷川 達人[代表], 科学技術融合振興財団 研究助成, 970千円, "親子双方のエンゲージメントに配慮したスマホ依存改善支援システムの開発と実践評価", 2019.4-2021.3.	
-外部資金獲得	9	長谷川 達人[代表], I-O DATA財団 研究開発助成, 1,450千円, "タッチタイピング習得支援のためのNINJAキーボードの試作", 2019.4-2020.3.	
-外部資金獲得	10	長谷川 達人[代表], 科研費 若手研究, 4,160千円, "コンテキストアウェアネス技術を応用した個人適応型自主学習支援基盤の開発", 2019.4 - 2022.3.	
-外部資金獲得	11	長谷川 達人[代表], 立石科学技術振興財団財団 研究助成(A), 1,823千円, "深層生成モデルを用いたセンサデータの超解像と行動認識への応用", 2019.4-2020.3.	
-外部資金獲得	12	長谷川 達人[分担], 科研費 基盤研究C, 4,290千円, "社会課題を解決できるAI/IoT技術者育成のための実践的演習教材の開発", 2020.4 - 2024.3.	
-外部資金獲得	13	長谷川 達人[代表], JST ACT-X, "水産業のビッグデータ化に向けた汎用的な漁獲量認識基盤の開発", 2020.12 - 2023.3.	
-外部資金獲得	14	長谷川 達人[分担], 科研費 基盤研究C, 4,160千円, "医療施設内結核感染予防のための結核健診受検職員の継続支援システムの構築と臨床応用", 2021.4 - 2025.3.	
-外部資金獲得	15	長谷川 達人[分担], 科研費 基盤研究B, 17,810千円, "次世代の衛星科学観測を実現するオンボード機械学習システムの開発と科学解析への応用", 2022.4 - 2026.3.	
-外部資金獲得	16	長谷川 達人[分担], MEXT 令和4年度宇宙航空科学技術推進委託費 「AI・デジタル化×宇宙」技術⾰新⼈材育成プログラム, "高大連携宇宙AIコンペティションを通した「インテリジェント宇宙機」開発人材の育成", 2022.10 - 2025.3.	
-外部資金獲得	17	長谷川 達人[代表], JST ACT-X (加速フェーズ),"水産業のビッグデータ化に向けた汎用的な漁獲量認識基盤の開発", 2023.4 - 2024.3. グラント番号：JPMJAX20AJ	
-外部資金獲得	18	長谷川 達人[代表], 日本学術振興会科学研究費補助金 基盤研究C, 採択額 4,680千円, "行動認識AIの民主化に向けた基盤モデルの実現", 2023.4 - 2026.3.	
-外部資金獲得	19	長谷川 達人[代表], 公益財団法人 TAKEUCHI 育英奨学会 2024 年度助成, "工業製品の異常検知における事前知識を用いない論理異常検出", 2024.10 - 2025.3.	
-外部資金獲得	20	長谷川 達人[分担], マリンインフォマティクス研究機構 研究開発, "他拠点へ容易に展開可能な魚種・サイズ選別AIシステムの開発", 2025.4 - 2029.3. (代表：峰野博史教授)	
-外部資金獲得	21	長谷川 達人[分担], 日本学術振興会科学研究費補助金 基盤研究A, "時空間生成データ拡張の実現とモデル崩壊条件の解明", 2025.4 - 2029.3. 25H01110 (代表：峰野博史教授)	
-外部資金獲得	22	長谷川 達人[代表], 日本学術振興会科学研究費補助金 基盤研究B, "再利用型Transformerで駆動する基盤モデルの極限エッジアクセラレータ", 2026.4 - 2030.3.	
+学生の受賞	36	坂井 俊介, 大会奨励賞, 情報処理学会第88回全国大会, 松山, 2026.3.	
+学生の受賞	37	會澤智大, 栗山繁, 堀田克哉, 張潮, 長谷川達人, 顧淳祉, 研究奨励賞, Visual Computing 2026, 札幌, 2026.	
+外部資金獲得[代表]	1	長谷川 達人[代表], 立石科学技術振興財団 国際交流助成, 2015.9.	
+外部資金獲得[代表]	2	長谷川 達人[代表], 科学技術融合振興財団 補助金助成, 210千円, "ゲーミフィケーションを利用したスマートフォン依存抑制アプリケーションの開発", 2016.1.	
+外部資金獲得[代表]	3	長谷川 達人[代表], 科研費 若手研究B, 3,900千円, "生体情報に基づく学習者状態に応じた自主学習支援システムの開発", 2016.4 - 2019.3.	
+外部資金獲得[代表]	4	長谷川 達人[代表], スズキ財団 科学技術研究助成, 1,200千円, "教師ラベル取得に制約のある状況における行動センシングの個人適応", 2019.4-2020.3.	
+外部資金獲得[代表]	5	長谷川 達人[代表], 科学技術融合振興財団 研究助成, 970千円, "親子双方のエンゲージメントに配慮したスマホ依存改善支援システムの開発と実践評価", 2019.4-2021.3.	
+外部資金獲得[代表]	6	長谷川 達人[代表], I-O DATA財団 研究開発助成, 1,450千円, "タッチタイピング習得支援のためのNINJAキーボードの試作", 2019.4-2020.3.	
+外部資金獲得[代表]	7	長谷川 達人[代表], 科研費 若手研究, 4,160千円, "コンテキストアウェアネス技術を応用した個人適応型自主学習支援基盤の開発", 2019.4 - 2022.3.	
+外部資金獲得[代表]	8	長谷川 達人[代表], 立石科学技術振興財団財団 研究助成(A), 1,823千円, "深層生成モデルを用いたセンサデータの超解像と行動認識への応用", 2019.4-2020.3.	
+外部資金獲得[代表]	9	長谷川 達人[代表], JST ACT-X, "水産業のビッグデータ化に向けた汎用的な漁獲量認識基盤の開発", 2020.12 - 2023.3.	
+外部資金獲得[代表]	10	長谷川 達人[代表], JST ACT-X (加速フェーズ),"水産業のビッグデータ化に向けた汎用的な漁獲量認識基盤の開発", 2023.4 - 2024.3. グラント番号：JPMJAX20AJ	
+外部資金獲得[代表]	11	長谷川 達人[代表], 日本学術振興会科学研究費補助金 基盤研究C, 採択額 4,680千円, "行動認識AIの民主化に向けた基盤モデルの実現", 2023.4 - 2026.3.	
+外部資金獲得[代表]	12	長谷川 達人[代表], 公益財団法人 TAKEUCHI 育英奨学会 2024 年度助成, "工業製品の異常検知における事前知識を用いない論理異常検出", 2024.10 - 2025.3.	
+外部資金獲得[代表]	13	長谷川 達人[代表], 日本学術振興会科学研究費補助金 基盤研究B, "再利用型Transformerで駆動する基盤モデルの極限エッジアクセラレータ", 2026.4 - 2030.3.	
+外部資金獲得[代表]	14	長谷川 達人[代表], JST さきがけ「デジタル時空間拡張基盤領域」，"行動センシング世界モデルによる潜在身体空間上での仮想身体介入", 2026.10 - 2030.3.	
+外部資金獲得[分担]	1	長谷川 達人[分担], IPA 2009年度下期未踏IT人材発掘・育成事業, "GUIベースによる携帯アプリ統合開発環境の構築", 5,000千円, 2009.12 - 2010.8.	
+外部資金獲得[分担]	5	長谷川 達人[分担], 科研費 基盤研究C, 4,940千円, "医療施設内結核感染予防のための結核健診受検職員の継続支援システムの構築", 2016.4 - 2020.3.	
+外部資金獲得[分担]	6	長谷川 達人[分担], 科研費 基盤研究C, 4,420千円, "工学的アプローチに基づいた，宇宙自然プラズマ波動の自動識別・知識発見に関する研究", 2017.4 - 2020.3.	
+外部資金獲得[分担]	12	長谷川 達人[分担], 科研費 基盤研究C, 4,290千円, "社会課題を解決できるAI/IoT技術者育成のための実践的演習教材の開発", 2020.4 - 2024.3.	
+外部資金獲得[分担]	14	長谷川 達人[分担], 科研費 基盤研究C, 4,160千円, "医療施設内結核感染予防のための結核健診受検職員の継続支援システムの構築と臨床応用", 2021.4 - 2025.3.	
+外部資金獲得[分担]	15	長谷川 達人[分担], 科研費 基盤研究B, 17,810千円, "次世代の衛星科学観測を実現するオンボード機械学習システムの開発と科学解析への応用", 2022.4 - 2026.3.	
+外部資金獲得[分担]	16	長谷川 達人[分担], MEXT 令和4年度宇宙航空科学技術推進委託費 「AI・デジタル化×宇宙」技術⾰新⼈材育成プログラム, "高大連携宇宙AIコンペティションを通した「インテリジェント宇宙機」開発人材の育成", 2022.10 - 2025.3.	
+外部資金獲得[分担]	20	長谷川 達人[分担], マリンインフォマティクス研究機構 研究開発, "他拠点へ容易に展開可能な魚種・サイズ選別AIシステムの開発", 2025.4 - 2029.3. (代表：峰野博史教授)	
+外部資金獲得[分担]	21	長谷川 達人[分担], 日本学術振興会科学研究費補助金 基盤研究A, "時空間生成データ拡張の実現とモデル崩壊条件の解明", 2025.4 - 2029.3. (代表：峰野博史教授)	
+外部資金獲得[分担]	22	長谷川 達人[分担], 日本学術振興会科学研究費補助金 基盤研究C, "高齢者のサルコペニアを在宅でエコーを用いて評価する新たな筋肉の質の評価方法の確立", 2026.4 - 2030.3.（代表：岡本智子助教）
 学内予算獲得[代表]	1	長谷川 達人[代表]，H30年度福井大学ライフサイエンスイノベーションセンター公募採択型研究費, "ウェアラブルセンシングによる看護業務定量化に関する研究", 2018.8 - 2019.3.	
 学内予算獲得[代表]	2	長谷川 達人[代表]，R1年度福井大学ライフサイエンスイノベーションセンター公募採択型研究費, "キャリブレーションレスな行動センシングを実現する深層学習モデルの開発", 2018.8 - 2019.3.	
 学内予算獲得[代表]	3	長谷川 達人[代表]，R1年度福井大学次世代卓越研究者に対する支援，"行動センシングにおける個人依存を抑制する深層学習モデルの開発"，2019.9-2020.3.	
